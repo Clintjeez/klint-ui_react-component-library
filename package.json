@@ -13,7 +13,10 @@
     "dev": "rollup -c -w",
     "test": "jest --watchAll --verbose",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky",
+    "lint": "eslint ./src ",
+    "lint:fix": "eslint ./src --fix"
   },
   "jest": {
     "testEnvironment": "jsdom"
@@ -37,11 +40,14 @@
   },
   "author": "",
   "license": "MIT",
+  "homepage": "https://github.com/Clintjeez/klint-ui_react-component-library",
   "devDependencies": {
     "@babel/preset-env": "^7.24.8",
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
     "@chromatic-com/storybook": "^1.6.1",
+    "@eslint/compat": "^1.1.1",
+    "@eslint/js": "^9.7.0",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -57,6 +63,9 @@
     "@testing-library/react": "^16.0.0",
     "@types/jest": "^29.5.12",
     "@types/react": "^18.3.3",
+    "eslint": "^9.7.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.8.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "react": "^18.3.1",
@@ -66,7 +75,8 @@
     "storybook": "^8.2.5",
     "styled-components": "^6.1.12",
     "tslib": "^2.6.3",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.1"
   },
   "peerDependencies": {
     "react": ">=16"
